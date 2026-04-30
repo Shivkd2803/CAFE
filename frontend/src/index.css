@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply font-sans text-coffee-800 dark:text-cream antialiased; }
+
+.glass {
+  @apply bg-white/40 dark:bg-coffee-800/40 backdrop-blur-xl border border-white/30 dark:border-coffee-700/40;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-coffee-800 text-cream font-medium hover:bg-coffee-700 active:scale-95 transition-all shadow-lg shadow-coffee-900/20;
+}
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-coffee-800/30 dark:border-cream/30 hover:bg-coffee-800/5 dark:hover:bg-cream/5 transition;
+}
+.input {
+  @apply w-full px-4 py-3 rounded-xl bg-white/60 dark:bg-coffee-800/60 border border-coffee-300/50 dark:border-coffee-700 focus:outline-none focus:ring-2 focus:ring-coffee-500 transition;
+}
+.skeleton {
+  @apply animate-pulse bg-coffee-200/60 dark:bg-coffee-700/40 rounded-xl;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { @apply bg-coffee-400 rounded-full; }
